@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurtleChallenge", "TurtleChallenge\TurtleChallenge.csproj", "{98EAF341-E42F-404A-8581-0FF741504A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurtleChallenge.Core", "TurtleChallenge.Core\TurtleChallenge.Core.csproj", "{94DE7A8A-2C24-43B0-A01C-55159D70094D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurtleChallenge.Tests", "TurtleChallenge.Tests\TurtleChallenge.Tests.csproj", "{61E90F42-79E2-4733-AAF3-3B540FA25354}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{876DFEC4-F7D5-41EB-B543-12D06CB9FE0E}"
+	ProjectSection(SolutionItems) = preProject
+		Todo.txt = Todo.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98EAF341-E42F-404A-8581-0FF741504A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EAF341-E42F-404A-8581-0FF741504A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EAF341-E42F-404A-8581-0FF741504A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EAF341-E42F-404A-8581-0FF741504A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94DE7A8A-2C24-43B0-A01C-55159D70094D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94DE7A8A-2C24-43B0-A01C-55159D70094D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94DE7A8A-2C24-43B0-A01C-55159D70094D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94DE7A8A-2C24-43B0-A01C-55159D70094D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E90F42-79E2-4733-AAF3-3B540FA25354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E90F42-79E2-4733-AAF3-3B540FA25354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E90F42-79E2-4733-AAF3-3B540FA25354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E90F42-79E2-4733-AAF3-3B540FA25354}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
