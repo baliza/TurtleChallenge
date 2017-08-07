@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94DE7A8A-2C24-43B0-A01C-55159D70094D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TurtleChallenge.Core</RootNamespace>
+    <AssemblyName>TurtleChallenge.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CompassDirection.cs" />
+    <Compile Include="Common\Point.cs" />
+    <Compile Include="Common\Size.cs" />
+    <Compile Include="Minefield\Movers\EastMover.cs" />
+    <Compile Include="Minefield\IMindfield.cs" />
+    <Compile Include="Minefield\IMindFieldManager.cs" />
+    <Compile Include="Minefield\Movers\IMover.cs" />
+    <Compile Include="Minefield\ITileGenerator.cs" />
+    <Compile Include="Minefield\Mindfield.cs" />
+    <Compile Include="Minefield\Movers\Mover.cs" />
+    <Compile Include="Minefield\Movers\NorthMover.cs" />
+    <Compile Include="Minefield\Movers\SouthMover.cs" />
+    <Compile Include="Minefield\TileGenerator.cs" />
+    <Compile Include="Minefield\Movers\MoveResult.cs" />
+    <Compile Include="Minefield\Movers\WestMover.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tiles\EmptyTitle.cs" />
+    <Compile Include="Tiles\ExitTitle.cs" />
+    <Compile Include="Tiles\ITile.cs" />
+    <Compile Include="Tiles\MineTitle.cs" />
+    <Compile Include="Tiles\Tile.cs" />
+    <Compile Include="Turtle\Rotators\EastToSouthRotator.cs" />
+    <Compile Include="Turtle\Rotators\IRotator.cs" />
+    <Compile Include="Turtle\ITurtle.cs" />
+    <Compile Include="Turtle\Rotators\NorthToEastRotator.cs" />
+    <Compile Include="Turtle\Rotators\SouthToWestRotator.cs" />
+    <Compile Include="Turtle\Turtle.cs" />
+    <Compile Include="Turtle\MoveResultExtensions.cs" />
+    <Compile Include="Turtle\TurtleStatus.cs" />
+    <Compile Include="Turtle\Rotators\WestToNorthRotator.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
