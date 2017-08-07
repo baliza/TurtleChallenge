@@ -1,0 +1,4 @@
++Add More Console information, longer messages
++Add Help in Console app
++Add IoCcontainer 
++Extend Movers, Rotators to use other cases (2 tiles, 45 degrees,...)
